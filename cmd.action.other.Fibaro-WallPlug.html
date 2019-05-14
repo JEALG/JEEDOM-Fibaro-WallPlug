@@ -30,15 +30,15 @@
 
         if(jeedom.cmd.normalizeName('#name#') == 'on'){
             if('#state#' != ''){
-                $('.cmd[data-cmd_uid=#uid#] .iconCmd#uid#').append('<img src="'+srcImgOff+'" '+srcImgSize+'>');
+                $('.cmd[data-cmd_uid=#uid#] .iconCmd#uid#').empty().append('<img src="'+srcImgOff+'" '+srcImgSize+'>');
             }else{
-                $('.cmd[data-cmd_uid=#uid#] .iconCmd#uid#').append('<img src="'+srcImgOn+'" '+srcImgSize+'>');
+                $('.cmd[data-cmd_uid=#uid#] .iconCmd#uid#').empty().append('<img src="'+srcImgOn+'" '+srcImgSize+'>');
             }
         }else{
             if('#state#' != ''){
-                $('.cmd[data-cmd_uid=#uid#] .iconCmd#uid#').append('<img src="'+srcImgOn+'" '+srcImgSize+'>');
+                $('.cmd[data-cmd_uid=#uid#] .iconCmd#uid#').empty().append('<img src="'+srcImgOn+'" '+srcImgSize+'>');
             }else{
-                $('.cmd[data-cmd_uid=#uid#] .iconCmd#uid#').append('<img src="'+srcImgOff+'" '+srcImgSize+'>');
+                $('.cmd[data-cmd_uid=#uid#] .iconCmd#uid#').empty().append('<img src="'+srcImgOff+'" '+srcImgSize+'>');
             }
         }
         
